@@ -28,16 +28,8 @@ public class AppTest extends TestCase {
         super.setUp();
         // Initialize Campeon objects before each test
         String nombre = null;
-        c1 = new Campeon("c1", "t1", 3000, 400, 200);
+        c1 = new Campeon(nombre, "t1", 3000, 400, 200);
 		c2 = new Campeon("c2", "t2", 2500, 500, 250);
-    }
-
-    @Override
-    protected void tearDown() throws Exception {
-        super.tearDown();
-        // Cleanup if necessary
-        c1 = null;
-        c2 = null;
     }
 
     /**
